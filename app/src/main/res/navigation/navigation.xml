@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/bangunRuang">
+
+    <fragment
+        android:id="@+id/bangunRuang"
+        android:name="org.d3if4056.assessmentpra.BangunRuang"
+        android:label="Bangun Datar"
+        tools:layout="@layout/fragment_bangun_ruang">
+        <action
+            android:id="@+id/action_bangunRuang_to_persegiPanjang"
+            app:destination="@id/persegiPanjang" />
+        <action
+            android:id="@+id/action_bangunRuang_to_segiTiga"
+            app:destination="@id/segiTiga" />
+        <action
+            android:id="@+id/action_bangunRuang_to_about"
+            app:destination="@id/about" />
+    </fragment>
+    <fragment
+        android:id="@+id/about"
+        android:name="org.d3if4056.assessmentpra.About"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/persegiPanjang"
+        android:name="org.d3if4056.assessmentpra.PersegiPanjang"
+        android:label="Persegi Panjang"
+        tools:layout="@layout/fragment_persegi_panjang" />
+    <fragment
+        android:id="@+id/segiTiga"
+        android:name="org.d3if4056.assessmentpra.SegiTiga"
+        android:label="Segitiga Siku-siku"
+        tools:layout="@layout/fragment_segi_tiga" />
+</navigation>
